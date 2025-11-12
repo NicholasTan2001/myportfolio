@@ -1,0 +1,334 @@
+    /* Html Css*/
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Body Css*/
+    body {
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    /* Svg Css*/
+    svg {
+        transition: transform 0.3s ease;
+    }
+
+    svg.rotate-180 {
+        transform: rotate(180deg);
+    }
+
+    /* Navigation Bar Link Css */
+    .nav-link {
+        transition: color 0.3s ease;
+    }
+
+    /* Intro Overlay Css */
+    #intro-overlay {
+        animation: fadeOut 1s ease-in-out forwards;
+        animation-delay: 1.5s;
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    /* Navigation Bar Css */
+    nav {
+        position: fixed;
+        width: 100%;
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    nav.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Black Shadow Box Css */
+    .con-shadow-black {
+        box-shadow:
+            0 20px 40px rgba(0, 0, 0, 0.3),
+            0 -20px 40px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 10;
+    }
+
+    /* White Shadow Box Css */
+    .con-shadow-white-box {
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    }
+
+    /* Table Fade Css */
+    .table-fade {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .table-fade.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Section Fade Css */
+    .fade-section {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease, transform 1s ease;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #5a8bdb;
+        animation: borderGlow 1.5s infinite linear;
+    }
+
+    .fade-section.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    @keyframes borderGlow {
+        0% {
+            border-color: #5a8bdb;
+        }
+
+        50% {
+            border-color: #ffffff;
+        }
+
+        100% {
+            border-color: #5a8bdb;
+        }
+    }
+
+    /* Slides CSs */
+    .mySlides {
+        display: none;
+    }
+
+    /* Fade Css */
+    .fade {
+        animation: fade 0.7s ease-in-out;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Number Text Css */
+    .numbertext {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: #f2f2f2;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* Caption Container Css */
+    .caption-container p {
+        margin: 0;
+    }
+
+    /* Cursor Css */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Demo Css */
+    .demo {
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    }
+
+    /* Project Fade Css */
+    .fade-project {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease, transform 1s ease;
+        border-radius: 0.5rem;
+        border: 2px solid transparent;
+    }
+
+    .fade-project.fade-in {
+        opacity: 0.3;
+        transform: translateY(0);
+    }
+
+    .fade-project.glow-active {
+        opacity: 1;
+        animation: glowBorderContainer 2s infinite alternate;
+    }
+
+    @keyframes glowBorderContainer {
+        0% {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);
+            border-color: rgb(255, 255, 255);
+        }
+
+        50% {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
+            border-color: rgb(255, 255, 255);
+        }
+
+        100% {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);
+            border-color: rgb(255, 255, 255);
+        }
+    }
+
+    /* Table Fade 2 Css */
+    .table-fade-2 {
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .table-fade-2.fade-in {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Glow Fire Dot Css */
+    .fire-dot {
+        background: radial-gradient(circle, #4da6ff 0%, #3399ff 70%, #00ccff 100%);
+        animation: fire-flicker 1s infinite;
+    }
+
+    @keyframes fire-flicker {
+
+        0%,
+        100% {
+            transform: scale(1) translateY(0);
+            box-shadow: 0 0 5px #4da6ff, 0 0 10px #3399ff, 0 0 15px #00ccff;
+            opacity: 1;
+        }
+
+        25% {
+            transform: scale(1.2) translateY(-2px);
+            box-shadow: 0 0 8px #4da6ff, 0 0 12px #3399ff, 0 0 18px #00ccff;
+            opacity: 0.9;
+        }
+
+        50% {
+            transform: scale(0.9) translateY(2px);
+            box-shadow: 0 0 6px #4da6ff, 0 0 10px #3399ff, 0 0 16px #00ccff;
+            opacity: 1;
+        }
+
+        75% {
+            transform: scale(1.1) translateY(-1px);
+            box-shadow: 0 0 7px #4da6ff, 0 0 11px #3399ff, 0 0 17px #00ccff;
+            opacity: 0.95;
+        }
+    }
+
+    /* Start Blink Css */
+    .blink {
+        animation: blinkSpark 1s infinite alternate, sparkleScale 1s infinite alternate;
+    }
+
+    @keyframes sparkleScale {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+    }
+
+    /* Timeline Fade Css */
+    .timeline-fade {
+        opacity: 0;
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .timeline-fade.fade-in {
+        opacity: 1;
+    }
+
+    /* Language Item Css */
+    .lang-item {
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .lang-item.fade-in {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Referee Fade Css */
+    .referee-fade {
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .referee-fade.fade-in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    /* Referee fade 2 Css */
+    .referee-fade-2 {
+        opacity: 0;
+        transform: translateX(30px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .referee-fade-2.fade-in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    /* Search Current Outline Css */
+    .outline-current {
+        background: linear-gradient(90deg, #1e3a8a, #3b82f6, #93c5fd);
+        background-size: 200% 200%;
+        animation: gradientFlow 2.5s ease infinite;
+        color: white;
+        border-radius: 2px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+    }
+
+    @keyframes gradientFlow {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
