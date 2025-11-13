@@ -474,7 +474,7 @@ function initScrollToTopButton() {
             btn.classList.remove('show');
         }
     });
-    git
+
     btn.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
@@ -482,6 +482,8 @@ function initScrollToTopButton() {
         });
     });
 }
+
+
 
 
 
