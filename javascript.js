@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initRefereeFadeAnimation();
     initRefereeFadeAnimation2();
     initSearchFunction();
+    initScrollToTopButton();
 
     document.querySelectorAll('.slider').forEach(slider => {
         showSlides(slider, 1);
@@ -459,6 +460,27 @@ function initSearchFunction() {
             }
         });
     }
+}
+
+/* ---------------- Button To Top Function ---------------- */
+function initScrollToTopButton() {
+    const btn = document.getElementById('scrollToTopBtn');
+    if (!btn) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            btn.classList.add('show');
+        } else {
+            btn.classList.remove('show');
+        }
+    });
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 }
 
 

@@ -332,3 +332,14 @@
             background-position: 0% 50%;
         }
     }
+
+    #scrollToTopBtn {
+        z-index: 999999 !important;
+        position: fixed !important;
+    }
+
+    #scrollToTopBtn.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
