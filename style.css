@@ -42,7 +42,6 @@
 
     /* Navigation Bar Css */
     nav {
-        position: fixed;
         width: 100%;
         opacity: 0;
         transform: translateY(-30px);
@@ -333,6 +332,7 @@
         }
     }
 
+    /* To Top Button Css */
     #scrollToTopBtn {
         z-index: 999999 !important;
         position: fixed !important;
