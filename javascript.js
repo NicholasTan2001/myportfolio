@@ -462,7 +462,7 @@ function initSearchFunction() {
     }
 }
 
-/* ---------------- To Top Button Function ---------------- */
+/* ---------------- Button To Top Function ---------------- */
 function initScrollToTopButton() {
     const btn = document.getElementById('scrollToTopBtn');
     if (!btn) return;
