@@ -398,7 +398,7 @@ function initSearchFunction() {
 
                 if (index >= 0) {
                     const span = document.createElement('span');
-                    span.className = 'bg-yellow-300 text-black transition-all duration-500';
+                    span.className = 'outline-current';
                     const matchedText = node.splitText(index);
                     const after = matchedText.splitText(query.length);
                     span.textContent = matchedText.textContent;
