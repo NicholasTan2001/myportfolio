@@ -27,7 +27,8 @@
                 <nav class="bg-black border-gray-200 dark:bg-gray-900">
                     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">My
+                            <span
+                                class="self-center text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-blue-300 to-purple-300 text-transparent bg-clip-text">My
                                 Portfolio</span>
                         </a>
 
@@ -157,9 +158,16 @@
         </header>
 
         <main>
+            <div id="snow-container" class="pointer-events-none fixed inset-0 overflow-hidden"></div>
+
             <div id="intro-overlay"
-                class="fixed inset-0 bg-black flex items-center justify-center z-50 opacity-100 transition-opacity duration-1000">
-                <h1 class="text-white text-2xl font-bold">Welcome to My Portfolio !</h1>
+                class="fixed inset-0 bg-black flex flex-col items-center justify-center z-50 opacity-100 transition-opacity duration-1000">
+                <h1
+                    class="flex text-2xl font-bold bg-gradient-to-r from-purple-300 to-blue-300 text-transparent bg-clip-text">
+                    Welcome to My Portfolio !</h1>
+
+                <h1 class="flex text-sm font-bold text-gray-300 mt-5">
+                    developed by Nicholas Tan Kae Jer</h1>
             </div>
 
             <!-- Introduction Page -->
@@ -276,34 +284,34 @@
                     <div
                         class="bg-black text-white rounded-lg border-2 border-blue-200 p-10 con-shadow-white-box mt-10 fade-section">
 
-                        <div class="text-md lg:text-xl font-semibold">
+                        <div class="text-md lg:text-xl font-semibold hover:text-purple-300 cursor-pointer">
                             Soft Skills
                         </div>
 
                         <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 mt-10 text-md lg:text-xl">
-                            <div> • Responsibility</div>
-                            <div> • Creativity</div>
-                            <div> • Time Management</div>
-                            <div> • Communication Skills</div>
-                            <div> • Critical Thinking</div>
-                            <div> • Honest</div>
+                            <div class="hover:text-blue-200 cursor-pointer"> • Responsibility</div>
+                            <div class="hover:text-blue-200 cursor-pointer"> • Creativity</div>
+                            <div class="hover:text-blue-200 cursor-pointer"> • Time Management</div>
+                            <div class="hover:text-blue-200 cursor-pointer"> • Communication Skills</div>
+                            <div class="hover:text-blue-200 cursor-pointer"> • Critical Thinking</div>
+                            <div class="hover:text-blue-200 cursor-pointer"> • Honest</div>
                         </div>
 
                     </div>
 
                     <div
                         class="bg-black text-white rounded-lg border-2 border-blue-400 p-10 con-shadow-white-box mt-10 fade-section">
-                        <div class="text-md lg:text-xl font-semibold">
+                        <div class="text-md lg:text-xl font-semibold hover:text-purple-300 cursor-pointer">
                             Hard Skills
                         </div>
-                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 mt-5 text-md lg:text-xl">
-                            <div>• UI/UX Design</div>
-                            <div>• 2D & 3D Modelling</div>
-                            <div>• Multimedia Editing</div>
-                            <div>• Virtual Reality</div>
-                            <div>• Artificial Intelligence</div>
-                            <div>• Software / Website Development</div>
-                            <div class="col-span-full">
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 mt-5 text-md lg:text-x">
+                            <div class="hover:text-blue-200 cursor-pointer">• UI/UX Design</div>
+                            <div class="hover:text-blue-200 cursor-pointer">• 2D & 3D Modelling</div>
+                            <div class="hover:text-blue-200 cursor-pointer">• Multimedia Editing</div>
+                            <div class="hover:text-blue-200 cursor-pointer">• Virtual Reality</div>
+                            <div class="hover:text-blue-200 cursor-pointer">• Artificial Intelligence</div>
+                            <div class="hover:text-blue-200 cursor-pointer">• Software / Website Development</div>
+                            <div class="col-span-full hover:text-blue-200 cursor-pointer">
                                 • Programming Skills: HTML5, CSS3(SASS), JavaScript, Java, PHP, SQL, C, C++, C#, Python
                             </div>
                         </div>
@@ -312,64 +320,64 @@
                     <div class="flex flex-col lg:flex-row justify-center items-center lg:gap-20">
                         <div
                             class="bg-black text-white rounded-lg border-2 border-blue-600 p-10 con-shadow-white-box mt-10 fade-section">
-                            <div class="text-md lg:text-xl font-semibold">
+                            <div class="text-md lg:text-xl font-semibold hover:text-purple-300 cursor-pointer">
                                 Software Skills - Software / Website / Application Development
                             </div>
                             <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 mt-10 text-md lg:text-xl">
-                                <div>• Laravel</div>
-                                <div>• Next js</div>
-                                <div>• Spring Boot</div>
-                                <div>• Bootstrap</div>
-                                <div>• Tailwind CSS</div>
-                                <div>• React js</div>
-                                <div>• Vue js</div>
-                                <div>• Node js</div>
-                                <div>• Webpack</div>
-                                <div>• RESTful APIs</div>
-                                <div>• Postman</div>
-                                <div>• Docker</div>
-                                <div>• GitHub / Git</div>
-                                <div>• GitHub Capilot</div>
-                                <div>• MySQL</div>
-                                <div>• Firebase</div>
-                                <div>• Unity</div>
-                                <div>• Apache NetBeans</div>
-                                <div>• Android Studio</div>
-                                <div>• Visual Code Studio</div>
-                                <div>• Draw.io</div>
-                                <div>• Figma</div>
-                                <div>• Justinmind</div>
-                                <div>• Anaconda</div>
-                                <div>• Wix.com</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Laravel</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Next js</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Spring Boot</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Bootstrap</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Tailwind CSS</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• React js</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Vue js</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Node js</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Webpack</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• RESTful APIs</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Postman</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Docker</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• GitHub / Git</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• GitHub Capilot</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• MySQL</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Firebase</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Unity</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Apache NetBeans</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Android Studio</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Visual Code Studio</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Draw.io</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Figma</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Justinmind</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Anaconda</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Wix.com</div>
                             </div>
                         </div>
 
                         <div
                             class="bg-black text-white rounded-lg border-2 border-blue-600 p-10 con-shadow-white-box mt-10 fade-section">
-                            <div class="text-md lg:text-xl font-semibold">
+                            <div class="text-md lg:text-xl font-semibold hover:text-purple-300 cursor-pointer">
                                 Software Skills - Multimedia Design Development
                             </div>
                             <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 mt-10 text-md lg:text-xl">
-                                <div>• Adobe Premiere Pro</div>
-                                <div>• Adobe Photoshop</div>
-                                <div>• Capcut</div>
-                                <div>• Autodesk Maya</div>
-                                <div>• Pano2VR & Object2VR</div>
-                                <div>• Canva</div>
-                                <div>• Microsoft Words</div>
-                                <div>• Microsoft Powerpoint</div>
-                                <div>• Microsoft Teams</div>
-                                <div>• Microsoft Words</div>
-                                <div>• Facebook</div>
-                                <div>• Instagram</div>
-                                <div>• RedNote</div>
-                                <div>• Tiktok</div>
-                                <div>• Wechat</div>
-                                <div>• WhatsApp</div>
-                                <div>• Youtube</div>
-                                <div>• Telegram</div>
-                                <div>• Google Meeting</div>
-                                <div>• Zoom Meeting</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Adobe Premiere Pro</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Adobe Photoshop</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Capcut</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Autodesk Maya</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Pano2VR & Object2VR</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Canva</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Microsoft Words</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Microsoft Powerpoint</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Microsoft Teams</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Microsoft Words</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Facebook</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Instagram</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• RedNote</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Tiktok</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Wechat</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• WhatsApp</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Youtube</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Telegram</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Google Meeting</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Zoom Meeting</div>
                             </div>
                         </div>
                     </div>
@@ -377,16 +385,16 @@
                     <div class="flex flex-col justify-center items-center mb-10">
                         <div
                             class="bg-black text-white rounded-lg border-2 border-red-300 p-10 con-shadow-white-box mt-10 fade-section">
-                            <div class="text-md lg:text-xl font-semibold">
+                            <div class="text-md lg:text-xl font-semibold hover:text-purple-300 cursor-pointer">
                                 AI Tools
                             </div>
                             <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-10 text-md lg:text-xl">
-                                <div>• Chatgpt</div>
-                                <div>• Capilot</div>
-                                <div>• Grok</div>
-                                <div>• Claude</div>
-                                <div>• DeepSeek</div>
-                                <div>• Gemini</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Chatgpt</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Capilot</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Grok</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Claude</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• DeepSeek</div>
+                                <div class="hover:text-blue-200 cursor-pointer">• Gemini</div>
                             </div>
                         </div>
                     </div>
@@ -2000,7 +2008,7 @@
                 <h1 class="text-xl lg:text-2xl font-semibold text-center mt-10">Referees</h1>
 
                 <div class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-40 max-w-5xl mx-auto mt-10 mb-10">
-                    <div class="cursor-pointer mx-auto flex flex-col lg:flex-row items-center gap-6 p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 referee-fade"
+                    <div class="cursor-pointer mx-auto flex flex-col lg:flex-row items-center gap-6 p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 referee-fade hover:bg-blue-100"
                         style="box-shadow: 0 0 15px 5px rgba(151, 180, 233, 0.5)">
                         <div>
                             <h3 class="text-lg lg:text-xl font-semibold text-blue-600">Ts. Dr. Junaida Binti Sulaiman
@@ -2018,7 +2026,7 @@
                         </div>
                     </div>
 
-                    <div class="cursor-pointer max-w-2xl mx-auto flex flex-col lg:flex-row items-center gap-6 p-6 rounded-2xl shadow-lg bg-white dark:bg-gray-900 border border-gray-200 referee-fade-2 "
+                    <div class="cursor-pointer max-w-2xl mx-auto flex flex-col lg:flex-row items-center gap-6 p-6 rounded-2xl shadow-lg bg-white dark:bg-gray-900 border border-gray-200 referee-fade-2 hover:bg-blue-100"
                         style="box-shadow: 0 0 15px 5px  rgba(151, 180, 233, 0.5)">
                         <div>
                             <h3 class="text-lg lg:text-xl font-semibold text-blue-600">Ts. Dr. Tuty Asmawaty Binti Abdul
@@ -2055,7 +2063,7 @@
         <div class="max-w-5xl mx-auto px-6 flex flex-col justify-between items-center gap-4">
 
             <div class="text-center">
-                <p class="text-gray-500 text-md lg:text-lg font-semibold">© 2025 Nicholas Tan. All rights reserved.
+                <p class="text-gray-500 text-sm lg:text-base font-semibold">© 2025 Nicholas Tan. All rights reserved.
                 </p>
             </div>
 
