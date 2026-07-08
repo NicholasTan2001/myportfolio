@@ -241,14 +241,14 @@ function initProjectFade() {
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
-                if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+                if (entry.isIntersecting && entry.intersectionRatio > 0.2) {
                     entry.target.classList.add("fade-in", "glow-active");
                 } else {
                     entry.target.classList.remove("glow-active");
                 }
             });
         },
-        { threshold: [0.5] }
+        { threshold: [0.2] }
     );
 
     fadeProjects.forEach((fadeProject) => observer.observe(fadeProject));
